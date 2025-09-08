@@ -8,10 +8,6 @@ import {
 import jwt from 'jsonwebtoken';
 import bcrypt from "bcryptjs";
 import logger from "../utils/logger";
-import {
-    createUserSchema,
-    loginUserSchema
-} from "../schema/user.schema";
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key'; // Replace in production
 const JWT_EXPIRES_IN = '1h';
